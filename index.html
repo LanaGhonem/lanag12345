@@ -69,10 +69,13 @@
 
 <style>
   .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
-    display: inline-block;
-    width: 80%; /* This adjusts the overall width of the content */
     margin: 0 auto;
+    width: 80%; /* Adjust the width to fit the content properly on the page */
   }
 
   .content {
@@ -80,25 +83,28 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
 
   .left {
     flex: 1;
     text-align: center;
+    padding-right: 20px;
   }
 
   .right {
     flex: 1;
-    padding-left: 20px;
     text-align: left;
+    padding-left: 20px;
   }
 
   img {
-    max-width: 100%; /* Ensures the image doesn't overflow */
+    max-width: 100%;
+    width: 600px; /* Increased size to make the image bigger */
     height: auto;
-    margin-bottom: 10px;
+    margin: 0 auto;
   }
-  
+
   .intro {
     text-align: center;
     margin-bottom: 20px;
@@ -113,6 +119,11 @@
 
     .right {
       padding-left: 0;
+      padding-right: 0;
+    }
+
+    img {
+      width: 100%; /* Ensures the image scales properly on smaller screens */
     }
   }
 </style>
@@ -127,7 +138,7 @@
 
   <div class="content">
     <div class="left">
-      <img src="persona-graph.png" alt="Persona for Sofia Alvarez" width="500"/>
+      <img src="persona-graph.png" alt="Persona for Sofia Alvarez" />
     </div>
     <div class="right">
       <p>
@@ -142,7 +153,6 @@
     </div>
   </div>
 </div>
-
 
 
 </body>
